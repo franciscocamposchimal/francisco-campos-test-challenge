@@ -1,0 +1,19 @@
+services:
+  db:
+    container_name: asdeporte-db
+    image: postgres:12.19
+    ports:
+      - "5432:5432"
+    env_file:
+      - .env
+    volumes:
+      - asdeporte-db-data:/var/lib/postgresql/data
+    networks:
+      - net-asdeporte
+
+volumes:
+  asdeporte-db-data:
+
+networks:
+  net-asdeporte:
+    external: true

@@ -1,18 +1,27 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { CustomersService } from './customersService.service';
+import { ConfigModule } from '@nestjs/config';
+import { MPCustomersService } from './MPCustomers.service';
+import { MPPaymentService } from './MPPayments.service';
 
-describe('CustomersService', () => {
-  let service: CustomersService;
+describe('Mercadopago Module', () => {
+  let customerService: MPCustomersService;
+  let paymentService: MPPaymentService;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      providers: [CustomersService],
+      imports: [ConfigModule],
+      providers: [MPCustomersService, MPPaymentService],
     }).compile();
 
-    service = module.get<CustomersService>(CustomersService);
+    customerService = module.get<MPCustomersService>(MPCustomersService);
+    paymentService = module.get<MPPaymentService>(MPPaymentService);
   });
 
-  it('should be defined', () => {
-    expect(service).toBeDefined();
+  it('customer service should be defined', () => {
+    expect(customerService).toBeDefined();
+  });
+
+  it('payment service should be defined', () => {
+    expect(paymentService).toBeDefined();
   });
 });

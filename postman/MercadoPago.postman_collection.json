@@ -1,0 +1,654 @@
+{
+	"info": {
+		"_postman_id": "086d46f7-7fed-4f55-9ecd-88db6ad980ff",
+		"name": "MercadoPago",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26594157"
+	},
+	"item": [
+		{
+			"name": "customers",
+			"item": [
+				{
+					"name": "/customers",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/customers/2008175294-fi8LvTR5P4JuJa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customers",
+								"2008175294-fi8LvTR5P4JuJa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/customers (Get One)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/customers/2006485944-4EPCDLsJVaKqjq",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customers",
+								"2006485944-4EPCDLsJVaKqjq"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/customers (Get One)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/customers/2006485944-4EPCDLsJVaKqjq",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"customers",
+										"2006485944-4EPCDLsJVaKqjq"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "526"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"20e-cEsxWronxfo5TIMxP23wlNERe/M\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Sep 2024 20:19:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"2006485944-4EPCDLsJVaKqjq\",\n    \"email\": \"campos@gmail.com\",\n    \"first_name\": null,\n    \"last_name\": null,\n    \"phone\": {\n        \"area_code\": null,\n        \"number\": null\n    },\n    \"identification\": {\n        \"type\": null,\n        \"number\": null\n    },\n    \"address\": {\n        \"id\": null,\n        \"zip_code\": null,\n        \"street_name\": null,\n        \"street_number\": null\n    },\n    \"date_registered\": null,\n    \"description\": null,\n    \"date_created\": \"2024-09-24T15:05:27.929-04:00\",\n    \"date_last_updated\": \"2024-09-24T15:05:27.929-04:00\",\n    \"metadata\": {\n        \"source_sync\": \"source_k\"\n    },\n    \"default_card\": null,\n    \"default_address\": null,\n    \"cards\": [],\n    \"addresses\": [],\n    \"live_mode\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "/customers (Get All)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/customers",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/customers",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"customers"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "595"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"253-Srv0OuGofq+sC31/AnMWBG7d0B0\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Sep 2024 20:09:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"results\": [\n        {\n            \"address\": {\n                \"id\": null,\n                \"zip_code\": null,\n                \"street_name\": null,\n                \"street_number\": null,\n                \"city\": null\n            },\n            \"addresses\": [],\n            \"cards\": [],\n            \"date_created\": \"2024-09-24T15:05:27.929-04:00\",\n            \"date_last_updated\": \"2024-09-24T15:05:27.929-04:00\",\n            \"date_registered\": null,\n            \"default_address\": null,\n            \"default_card\": null,\n            \"description\": null,\n            \"email\": \"campos@gmail.com\",\n            \"first_name\": null,\n            \"id\": \"2006485944-4EPCDLsJVaKqjq\",\n            \"identification\": {\n                \"type\": null,\n                \"number\": null\n            },\n            \"last_name\": null,\n            \"live_mode\": false,\n            \"metadata\": {\n                \"source_sync\": \"source_k\"\n            },\n            \"phone\": {\n                \"area_code\": null,\n                \"number\": null\n            }\n        }\n    ],\n    \"paging\": {\n        \"limit\": 10,\n        \"offset\": 0,\n        \"total\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "/customers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"franko@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/customers",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"campos@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/customers",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"customers"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1187"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4a3-/SGqdbSiKBwFb4rVrm9LXVjb0Zc\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Sep 2024 19:05:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"2006485944-4EPCDLsJVaKqjq\",\n    \"email\": \"campos@gmail.com\",\n    \"first_name\": null,\n    \"last_name\": null,\n    \"phone\": {\n        \"area_code\": null,\n        \"number\": null\n    },\n    \"identification\": {\n        \"type\": null,\n        \"number\": null\n    },\n    \"address\": {\n        \"id\": null,\n        \"zip_code\": null,\n        \"street_name\": null,\n        \"street_number\": null\n    },\n    \"date_registered\": null,\n    \"description\": null,\n    \"date_created\": \"2024-09-24T15:05:27.929-04:00\",\n    \"date_last_updated\": \"2024-09-24T15:05:27.929-04:00\",\n    \"default_card\": null,\n    \"default_address\": null,\n    \"cards\": [],\n    \"addresses\": [],\n    \"live_mode\": false,\n    \"user_id\": 2006485944,\n    \"merchant_id\": 276796233,\n    \"client_id\": 922446416551403,\n    \"status\": \"active\",\n    \"api_response\": {\n        \"status\": 201,\n        \"headers\": {\n            \"date\": [\n                \"Tue, 24 Sep 2024 19:05:27 GMT\"\n            ],\n            \"content-type\": [\n                \"application/json; charset=utf-8\"\n            ],\n            \"content-length\": [\n                \"579\"\n            ],\n            \"connection\": [\n                \"keep-alive\"\n            ],\n            \"x-content-type-options\": [\n                \"nosniff\"\n            ],\n            \"x-request-id\": [\n                \"a40a2b91-f7dd-4b1e-bb96-42eeae61a6f4\"\n            ],\n            \"x-xss-protection\": [\n                \"1; mode=block\"\n            ],\n            \"strict-transport-security\": [\n                \"max-age=16070400; includeSubDomains; preload\"\n            ],\n            \"access-control-allow-origin\": [\n                \"*\"\n            ],\n            \"access-control-allow-headers\": [\n                \"Content-Type\"\n            ],\n            \"access-control-allow-methods\": [\n                \"PUT, GET, POST, DELETE, OPTIONS\"\n            ],\n            \"access-control-max-age\": [\n                \"86400\"\n            ],\n            \"timing-allow-origin\": [\n                \"*\"\n            ]\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "/customers (Update One)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\": \"Emmanuel\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/customers/2008175294-fi8LvTR5P4JuJa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customers",
+								"2008175294-fi8LvTR5P4JuJa"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/customers (Update One)",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"first_name\": \"franko\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/customers/2006485944-4EPCDLsJVaKqjq",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"customers",
+										"2006485944-4EPCDLsJVaKqjq"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "621"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"26d-4ZctJa8lnZEq2/pddYNiTK1+ucE\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Sep 2024 22:47:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"2006485944-4EPCDLsJVaKqjq\",\n    \"email\": \"campos@gmail.com\",\n    \"first_name\": \"franko\",\n    \"last_name\": null,\n    \"phone\": {\n        \"area_code\": null,\n        \"number\": null\n    },\n    \"identification\": {\n        \"type\": null,\n        \"number\": null\n    },\n    \"address\": {\n        \"id\": null,\n        \"zip_code\": null,\n        \"street_name\": null,\n        \"street_number\": null\n    },\n    \"date_registered\": null,\n    \"description\": null,\n    \"date_created\": \"2024-09-24T15:05:27.929-04:00\",\n    \"date_last_updated\": \"2024-09-24T18:47:18.343-04:00\",\n    \"metadata\": {\n        \"source_sync\": \"source_k\"\n    },\n    \"default_card\": null,\n    \"default_address\": null,\n    \"cards\": [],\n    \"addresses\": [],\n    \"live_mode\": false,\n    \"user_id\": 2006485944,\n    \"merchant_id\": 276796233,\n    \"client_id\": 922446416551403,\n    \"status\": \"active\"\n}"
+						}
+					]
+				},
+				{
+					"name": "/customers/cards",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"token\": \"510bc654a780ec4881b1350f9c2eaf18\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/customers/2006485944-4EPCDLsJVaKqjq/cards",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customers",
+								"2006485944-4EPCDLsJVaKqjq",
+								"cards"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/customers/cards",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"token\": \"510bc654a780ec4881b1350f9c2eaf18\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/customers/2006485944-4EPCDLsJVaKqjq/cards",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"customers",
+										"2006485944-4EPCDLsJVaKqjq",
+										"cards"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "838"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"346-IB4pW5k8pYDFte2RTQJbm2YEEJ0\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 25 Sep 2024 10:07:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"additional_info\": {\n        \"request_public\": \"true\",\n        \"api_client_application\": \"traffic-layer\",\n        \"api_client_scope\": \"mpapi-pci-tl\"\n    },\n    \"card_number_id\": null,\n    \"cardholder\": {\n        \"name\": \"APRO\",\n        \"identification\": {\n            \"number\": null,\n            \"type\": null\n        }\n    },\n    \"customer_id\": \"2006485944-4EPCDLsJVaKqjq\",\n    \"date_created\": \"2024-09-25T05:01:38.642-04:00\",\n    \"date_last_updated\": \"2024-09-25T05:01:38.876-04:00\",\n    \"expiration_month\": 11,\n    \"expiration_year\": 2025,\n    \"first_six_digits\": \"547492\",\n    \"id\": \"1727258828832\",\n    \"issuer\": {\n        \"id\": 158,\n        \"name\": \"BBVA\"\n    },\n    \"last_four_digits\": \"0366\",\n    \"live_mode\": false,\n    \"payment_method\": {\n        \"id\": \"master\",\n        \"name\": \"master\",\n        \"payment_type_id\": \"credit_card\",\n        \"thumbnail\": \"http://img.mlstatic.com/org-img/MP3/API/logos/master.gif\",\n        \"secure_thumbnail\": \"https://www.mercadopago.com/org-img/MP3/API/logos/master.gif\"\n    },\n    \"security_code\": {\n        \"length\": 3,\n        \"card_location\": \"back\"\n    },\n    \"user_id\": \"2006485944\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Payments",
+			"item": [
+				{
+					"name": "/payments/methods",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/payments/methods",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"payments",
+								"methods"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/payments/methods",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/payments/methods",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"payments",
+										"methods"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22101"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5655-dJp02K3eJDxJCC2nZMp+SCeSwLs\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Sep 2024 23:32:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"clabe\",\n        \"name\": \"STP\",\n        \"payment_type_id\": \"bank_transfer\",\n        \"status\": \"active\",\n        \"secure_thumbnail\": \"https://www.mercadopago.com/org-img/MP3/API/logos/clabe.gif\",\n        \"thumbnail\": \"http://img.mlstatic.com/org-img/MP3/API/logos/clabe.gif\",\n        \"deferred_capture\": \"does_not_apply\",\n        \"settings\": [],\n        \"additional_info_needed\": [],\n        \"min_allowed_amount\": 1,\n        \"max_allowed_amount\": 350000,\n        \"accreditation_time\": 0,\n        \"financial_institutions\": [\n            {\n                \"id\": \"1\",\n                \"description\": \"SPEI\"\n            }\n        ],\n        \"processing_modes\": [\n            \"aggregator\"\n        ]\n    },\n    {\n        \"id\": \"master\",\n        \"name\": \"Mastercard\",\n        \"payment_type_id\": \"credit_card\",\n        \"status\": \"active\",\n        \"secure_thumbnail\": \"https://www.mercadopago.com/org-img/MP3/API/logos/master.gif\",\n        \"thumbnail\": \"http://img.mlstatic.com/org-img/MP3/API/logos/master.gif\",\n        \"deferred_capture\": \"supported\",\n        \"settings\": [\n            {\n                \"card_number\": {\n                    \"validation\": \"standard\",\n                    \"length\": 16\n                },\n                \"bin\": {\n                    \"pattern\": \"^(5|(286900)|(627180)|(51004038)|(51815500)|(53031011)|(2(221|222|223|224|225|226|227|228|229|23|24|25|26|27|28|29|3|4|5|6|70|71|720))|53666977|53462912|50625411|50621275|54400562)\",\n                    \"installments_pattern\": \"^(?!(532829)|(514509)|(511052)|(530346)|(512912)|(53666977)|(525343)|(536286)|(511421)|(534629)|(526476)|(506442)|(517805)|(518065)|(511747)|(544875)|(531722))\",\n                    \"exclusion_pattern\": \"^(506458|555691|231018|506208|541562|230868|506202|539177|531198|542878|506437|543691|506341|554964|527374|544505|589617|588772|559471|558426|557991|557923|557922|557921|557920|557910|557909|557908|557907|557906|557905|557875|557874|557602|557561|557551|554628|554627|554492|554173|553800|553467|551515|551509|551440|551353|551244|551238|551081|551077|550897|550233|549685|549672|549613|546378|545730|545325|545290|543924|539978|539975|538984|538405|538088|537938|537030|536783|535900|534926|534381|533987|533922|533609|532485|531294|530686|530113|529575|529571|529093|529028|528598|528430|528074|526498|526424|526354|526197|526196|526194|526192|525678|524711|524021|523691|523595|520698|520694|520416|520116|518847|517795|517771|517747|517721|517712|517440|517439|516594|516576|516415|516016|512280|511852|511765|511761|511265|511114|510586|506449|506441|506439|506432|506429|506428|506427|506424|506423|506422|506421|506416|506415|506414|506413|506412|506411|506410|506407|506406|506405|506402|506399|506398|506397|506393|506392|506391|506389|506386|506384|506383|506380|506377|506374|506373|506367|506365|506364|506361|506356|506355|506354|506353|506352|506351|506350|506344|506343|506342|506340|506337|506336|506335|506334|506333|506332|506323|506320|506319|506314|506313|506312|506311|506309|506307|506306|506305|506304|506303|506302|506300|506297|506294|506287|506284|506283|506282|506280|506279|506278|506277|506275|506274|506273|506270|506269|506265|506263|506259|506258|506257|506255|506254|506253|506251|506250|506249|506247|506245|506236|506229|506228|506221|506218|506217|506215|506214|506213|506212|506206|506205|506204|506201|506199|504563|504536|502275|522312|522794|523013|577991|528877|230884|230948|230951|557671|511391|557937|512422|539186|548843|536324|528514|538756|554718|506483|531374|559213|557567|552486|550770|546249|546213|546150|542432|536219|531462|531260|530952|528749|527523|527515|526226|517572|517279|514377|514104|512992|511067|511017|510805|519040|512104|534196|547083|519203|545829|511320|513932|551507|554096|555893|506346|510125|506316|519464|512477|516102|545774|510148|531180|53462912|50625411|50621275|51004038|51815500|53031011|54400562|536286|526476)\"\n                },\n                \"security_code\": {\n                    \"length\": 3,\n                    \"card_location\": \"back\",\n                    \"mode\": \"mandatory\"\n                }\n            }\n        ],\n        \"additional_info_needed\": [\n            \"cardholder_name\"\n        ],\n        \"min_allowed_amount\": 5,\n        \"max_allowed_amount\": 300000,\n        \"accreditation_time\": 2880,\n        \"financial_institutions\": [],\n        \"processing_modes\": [\n            \"aggregator\"\n        ]\n    },\n    {\n        \"id\": \"meliplace\",\n        \"name\": \"Meliplaces\",\n        \"payment_type_id\": \"ticket\",\n        \"status\": \"testing\",\n        \"secure_thumbnail\": \"https://www.mercadopago.com/org-img/MP3/API/logos/xxxxx.gif\",\n        \"thumbnail\": \"http://img.mlstatic.com/org-img/MP3/API/logos/xxxxx.gif\",\n        \"deferred_capture\": \"supported\",\n        \"settings\": [],\n        \"additional_info_needed\": [],\n        \"min_allowed_amount\": 10,\n        \"max_allowed_amount\": 10000,\n        \"accreditation_time\": 0,\n        \"financial_institutions\": [],\n        \"processing_modes\": [\n            \"aggregator\"\n        ]\n    },\n    {\n        \"id\": \"toka\",\n        \"name\": \"Toka\",\n        \"payment_type_id\": \"debit_card\",\n        \"status\": \"testing\",\n        \"secure_thumbnail\": \"https://www.mercadopago.com/org-img/MP3/API/logos/debvisa.gif\",\n        \"thumbnail\": \"http://img.mlstatic.com/org-img/MP3/API/logos/debvisa.gif\",\n        \"deferred_capture\": \"unsupported\",\n        \"settings\": [\n            {\n                \"card_number\": {\n                    \"validation\": \"standard\",\n                    \"length\": 16\n                },\n                \"bin\": {\n                    \"pattern\": \"^(420839|506302|506202|506429|506208|506316|230868|539177|420831)\",\n                    \"installments_pattern\": null,\n                    \"exclusion_pattern\": null\n                },\n                \"security_code\": {\n                    \"length\": 3,\n                    \"card_location\": \"back\",\n                    \"mode\": \"mandatory\"\n                }\n            }\n        ],\n        \"additional_info_needed\": [\n            \"cardholder_name\"\n        ],\n        \"min_allowed_amount\": 5,\n        \"max_allowed_amount\": 200000,\n        \"accreditation_time\": 2880,\n        \"financial_institutions\": [],\n        \"processing_modes\": [\n            \"aggregator\"\n        ]\n    },\n    {\n        \"id\": \"debmaster\",\n        \"name\": \"Mastercard Débito\",\n        \"payment_type_id\": \"debit_card\",\n        \"status\": \"active\",\n        \"secure_thumbnail\": \"https://www.mercadopago.com/org-img/MP3/API/logos/debmaster.gif\",\n        \"thumbnail\": \"https://www.mercadopago.com/org-img/MP3/API/logos/debmaster.gif\",\n        \"deferred_capture\": \"unsupported\",\n        \"settings\": [\n            {\n                \"card_number\": {\n                    \"validation\": \"standard\",\n                    \"length\": 16\n                },\n                \"bin\": {\n                    \"pattern\": \"^(230868|230884|230948|230951|231018|502275|504536|504563|506199|506201|506202|506204|506205|506206|506208|506213|506214|506215|506217|506218|506228|506229|506236|506245|506247|506249|506250|506251|506253|506255|506257|506258|506259|506263|506265|506269|506270|506274|506275|506277|506278|506279|506280|506282|506283|506284|506287|506294|506297|506300|506304|506305|506306|506307|506309|506311|506312|506313|506314|506319|506320|506323|506332|506333|506334|506335|506336|506337|506340|506342|506343|506344|506346|506350|506351|506352|506353|506354|506355|506356|506361|506364|506365|506367|506373|506374|506377|506380|506383|506384|506386|506389|506391|506392|506393|506397|506398|506399|506402|506405|506406|506407|506410|506411|506412|506413|506414|506415|506416|506421|506422|506423|506424|506427|506428|506429|506432|506439|506441|506449|506458|506483|510125|510586|510805|511017|511067|511114|511265|511320|511391|511761|511765|511852|512104|512280|512992|513932|514104|514377|516016|516102|516415|516576|516594|517279|517439|517440|517572|517712|517721|517747|517771|517795|518847|519040|519464|520116|520416|520694|520698|523595|523691|524021|524711|525678|526194|526196|526197|526226|526354|526424|526498|527515|527523|528074|528430|528514|528598|528749|529028|529093|529571|529575|530113|530686|530952|531180|531198|531260|531294|531374|531462|532485|533609|533922|533987|534196|535900|536219|536324|536783|537030|537938|538088|538405|538756|538984|539177|539975|542432|542878|543924|545290|545325|545730|545774|546150|546213|546249|546378|549613|549672|549685|550233|550770|550897|551077|551081|551238|551244|551353|551440|551509|551515|552486|553467|553800|554096|554173|554492|554627|554628|554718|555691|555893|557551|557561|557567|557602|557671|557874|557875|557905|557906|557907|557908|557909|557910|557920|557921|557922|557923|557991|558426|559213|559471|588772|589617|679999|51111421|51111422|52642468|67903180|54400562|536286|526476)\",\n                    \"installments_pattern\": \"\",\n                    \"exclusion_pattern\": null\n                },\n                \"security_code\": {\n                    \"length\": 3,\n                    \"card_location\": \"back\",\n                    \"mode\": \"mandatory\"\n                }\n            }\n        ],\n        \"additional_info_needed\": [\n            \"cardholder_name\"\n        ],\n        \"min_allowed_amount\": 5,\n        \"max_allowed_amount\": 300000,\n        \"accreditation_time\": 2880,\n        \"financial_institutions\": [],\n        \"processing_modes\": [\n            \"aggregator\"\n        ]\n    },\n    {\n        \"id\": \"tengo\",\n        \"name\": \"Tengo\",\n        \"payment_type_id\": \"debit_card\",\n        \"status\": \"testing\",\n        \"secure_thumbnail\": \"https://www.mercadopago.com/org-img/MP3/API/logos/debvisa.gif\",\n        \"thumbnail\": \"http://img.mlstatic.com/org-img/MP3/API/logos/debvisa.gif\",\n        \"deferred_capture\": \"unsupported\",\n        \"settings\": [\n            {\n                \"card_number\": {\n                    \"validation\": \"standard\",\n                    \"length\": 16\n                },\n                \"bin\": {\n                    \"pattern\": \"^(506382|511747|534548)\",\n                    \"installments_pattern\": null,\n                    \"exclusion_pattern\": null\n                },\n                \"security_code\": {\n                    \"length\": 3,\n                    \"card_location\": \"back\",\n                    \"mode\": \"mandatory\"\n                }\n            }\n        ],\n        \"additional_info_needed\": [\n            \"cardholder_name\"\n        ],\n        \"min_allowed_amount\": 5,\n        \"max_allowed_amount\": 200000,\n        \"accreditation_time\": 2880,\n        \"financial_institutions\": [],\n        \"processing_modes\": [\n            \"aggregator\"\n        ]\n    },\n    {\n        \"id\": \"visa\",\n        \"name\": \"Visa\",\n        \"payment_type_id\": \"credit_card\",\n        \"status\": \"active\",\n        \"secure_thumbnail\": \"https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif\",\n        \"thumbnail\": \"http://img.mlstatic.com/org-img/MP3/API/logos/visa.gif\",\n        \"deferred_capture\": \"supported\",\n        \"settings\": [\n            {\n                \"card_number\": {\n                    \"validation\": \"standard\",\n                    \"length\": 16\n                },\n                \"bin\": {\n                    \"pattern\": \"^(4|40000012|40117205|43383300|44275502|47704410|47937500|48593207|49157625)\",\n                    \"installments_pattern\": \"^(?!(421747|464598|410599|479554|474518|408245|416605|422582|405067|426174|492144|441749|451365|456933|472409|448716)|4(0(0(022|1(0(3|4)|63|7(6|8)|85|99)|2(17|25|4(7|8)|68)|344|4(3(7|9)|49|75|89)|6(34|47|54|89)|770|970)|1(093|178|200|370|684)|2(145|400|7(02|8[5-8]|9(1(7|8)|37|44)))|3(2(17|25|4(6|7)|54)|338|784)|4(024|280|370)|5(0(37|71)|6(43|9[3-5]))|6(1(6(6|8))|263|6(55|69)|897|997)|7(3(0(3|4))|4(09|38)|505|618)|9(152|308|6(0[1-3]|9(0|3))|744|9(21|8(3|4))))|1(0(0(39|84)|39[0-2]|4(07|2(4|5))|718|863)|1(0(5(0|4)|93)|759|8(0(1|4)|54))|2(1(77|87)|345|79(1|3))|4(7(09|20|40|91))|5(2(7(4|5)|8(1|3))|328)|6(0(23|94)|4(1[4-7]|2(4|5)))|7(9(5[3-5]|98))|8(0(4(4|7|8|9)|53)|668)|9(1(48|89|90)|590|6(19|2(0|3|5|8))|806))|2(0(061|3(12|3(8|9)|4(0|1)|767))|1(3(09|55|65|79)|4(01|10)|5(71|91)|644|84[3-8]|9(5(8|9)|6(0|2|4|5)))|2(0(0[4-6]|1(1|2)|23|53|61)|1(0(0|1|3)|85)|2(0(0|1)|74)|463|754)|3(669|808|9(25|44))|4(631|96(5|6))|5(8(2(1|2)|50)|944)|6(055|451|6(84|90))|7(16(4|7))|8(26[7-9]|304)|9768)|3(0(023|49(5|6|7)|535|963)|1307|2(03([0-2]|5)|72(8|9)|959)|3(4(41|60)|8(07|1(0|2|7)|2(2|6)|3(0|1|3)|47))|4(25[6-8]|639|769|9(49|56|95))|6618|7846|8(001|2(2(8|9)|30)|85(4|7)|935)|9(0(13|2(0|7))|14(0|4)|2(5(2|3)|67|76)|3(54|8(8|9)|90)))|4(0(066|69|(3|4))|1(080|1(20|74)|524)|2(01(4|5)|174|312|644|7(42|75))|4(054|4(34|5[6-9])|796)|5596|6(54(0|2)|690|867)|7(198|4(09|10))|8(165|459|502|7(33|99))|9(1(19|28|37|88)))|5(0(0(03|60)|40(7|8)|553|6(26|37|68)|75(0|1)|8(15|3(2|3|8)|4(3|4)|78)|9(10|7(2|9)|80|9(4|5)))|1(248|3(0[7-9]|42)|4(46|51|76)|786)|2(4(07|8(7|8)))|3(211|562)|4(07[3-5]|148|4(25|5(0|1))|6(00|4[0-2]|5[7-9])|8(12|32|45|5(0|1)))|5(1(03|7(0|5|9)|8([1-5]|[7-9])|9[6-9])|349|599|788|98(3|6))|6(137|4(60|7(3|7))|5(13|6[4-6]|8[2-4])|815)|7(0(21|55)|29(1|3)|305|5(09|15)|631|9(3(7|8)|43))|8919|9(0(2(0|3)|60|7(7|8)|80)|3(1[3-6]|56|60|8(0|[3-5]))|4(1(8|9)|26|50)|50(4|5)|918))|6(003(4|5)|1(046|202)|2(080|239|937)|3(158|312)|4(018|29[4-9]|30(0|1))|5(375|7(63|70))|6(0(57|69|7(0|9)))|7(1(12|4(8|9))|481|793)|8(201|531)|9(7(0(0|1)|2(4|5)|7(1|2))|8(70|93)))|7(0(455|598|653)|1(70(1|3))|2(81(1|3))|3(2(00|4[6-8])|702)|4(472|5(12|25|3(8|9))|638)|5(393|491|776)|6(002|33[1-3]|5(07|39|40)|60(4|5|6|8)|993)|7(1(28|57|76)|2(50|72))|9(3(52|7[5-8]|95)))|8(158(2|3)|2(108|4(25|69|7(0|6|9)|81))|3(0(42|66)|1(01|54|61)|3(1(2|6)))|4(1(32|9(3|8)))|5(0(11|29)|4(64|82)|904)|6(422|510)|9(070|167|3(21|89|91)|4(23|67|89)|9(11|25)))|9(0(071|172|225|69(6|8))|1(2(56|68)|41(1|2)|51(1|4)|6(17|4(6|7)|69|7(4|5))|956)|2(0(43|52)|1(37|69|80)|210|306|964)|3(1(0[0-3])|1(0|6)|49(3|4)|7(02|1(5|7|9)|6(2|3|8)|7(0|1)|81)|813)|4(0(16|78)|17(2|3)|611)|6(0(34|45|79|80)|210|6(17|7(0|2)))|8(4(0(1|4|[6-8])|2(3|4)|3(0|1|4|5)|4(2|9)|5(2|3)|84|96)|5(34|54|82)|8(11|58|61))|9847)))\",\n                    \"exclusion_pattern\": \"^(427295|411117|411673|428575|428574|474494|498589|498590|498588|498587|492143|491580|491567|491566|491365|491344|491282|491089|490950|490256|485044|485043|483112|483104|483030|481517|481516|481279|480078|480076|480066|480062|479303|477961|477261|477177|477130|476890|476840|476687|476684|476588|474646|474176|474174|473993|471239|469693|469495|467596|466397|465829|465828|465762|465498|465497|465496|465495|462278|460766|460700|460068|459497|457476|457386|457249|455537|455533|455511|455510|455509|451312|449700|449187|446986|446985|446878|446118|446117|446116|446115|445017|445016|444889|444888|442192|441549|441545|441313|441312|438099|435769|434798|433454|433194|433126|432049|430967|429522|428464|426808|426188|425984|425983|422671|422299|421364|421316|421003|420807|419823|419822|419821|419335|419334|418928|418914|416916|415269|415231|413131|413098|412432|412294|411808|410177|410128|409851|408400|408343|408341|408340|407848|407612|405930|405689|405063|402766|400889|400820|400819|400443|400195|404313|420831|420839|443834|451015|440393|465283|412408|411608|406285|442177|482473|471724|490070|486796|486742|483316|483314|481689|481588|481582|480922|478200|474478|474477|474472|473703|473702|473622|470502|470132|467010|466188|465345|461046|445319|443045|443042|442788|442756|442742|436618|434769|434258|434257|434256|427088|420767|411775|411773|410894|410881|410277|404597|403130|402708|401906|401863|401531|400064|407883|423429|426174|426283|440784|441548|457270|464596|464826|465581|478027|479552|479559|481273|486808|486842|490897|498585|441730|407595|407807|410108|431529|440955|452412|465591|480061|482483|490890|490896|494399|408176|415571|421747|40000012|40117205|43383300|44275502|47704410|47937500|48593207|49157625|493700|481550)\"\n                },\n                \"security_code\": {\n                    \"length\": 3,\n                    \"card_location\": \"back\",\n                    \"mode\": \"mandatory\"\n                }\n            }\n        ],\n        \"additional_info_needed\": [\n            \"cardholder_name\"\n        ],\n        \"min_allowed_amount\": 5,\n        \"max_allowed_amount\": 300000,\n        \"accreditation_time\": 2880,\n        \"financial_institutions\": [],\n        \"processing_modes\": [\n            \"aggregator\"\n        ]\n    },\n    {\n        \"id\": \"debvisa\",\n        \"name\": \"Visa Débito\",\n        \"payment_type_id\": \"debit_card\",\n        \"status\": \"active\",\n        \"secure_thumbnail\": \"https://www.mercadopago.com/org-img/MP3/API/logos/debvisa.gif\",\n        \"thumbnail\": \"http://img.mlstatic.com/org-img/MP3/API/logos/debvisa.gif\",\n        \"deferred_capture\": \"unsupported\",\n        \"settings\": [\n            {\n                \"card_number\": {\n                    \"validation\": \"standard\",\n                    \"length\": 16\n                },\n                \"bin\": {\n                    \"pattern\": \"^(400064|400443|400819|400889|401531|401863|401906|402708|402766|403130|404313|404597|405063|405689|405930|406285|407848|408340|408341|408343|408400|409851|410128|410177|410277|410881|410894|411117|411608|411673|411773|411775|411808|412294|412408|413098|415231|416916|418914|418928|419334|419335|419821|419822|419823|420767|420807|420831|420839|421003|421316|421747|422299|422671|425983|425984|426188|426808|427088|428464|430967|432049|433126|433194|433454|434256|434257|434258|434769|434798|435769|436618|438099|441312|441313|441545|441549|442177|442192|442742|442756|442788|443042|443045|444888|444889|445016|445017|445319|446115|446116|446117|446118|446878|446985|446986|449187|449700|451312|455509|455510|455511|455533|455537|457249|457476|459497|460068|460700|460766|461046|465345|465495|465496|465497|465498|465762|465828|465829|466188|466397|467010|467596|469495|469693|470132|470502|471239|471724|473622|473702|473703|473993|474174|474176|474472|474477|474478|474646|476588|476840|476890|477177|477261|477961|478200|479303|480062|480076|480078|480922|481516|481517|481582|481588|481689|482473|483030|483104|483112|483314|483316|485043|485044|486742|486796|490070|490256|490950|491089|491282|491365|491566|491567|491580|492143|493700|498587|498588|498590|41160801|49156630|49156634|49156644|49156650|49156651|49156652|49156653|49156654|49156655|49156656|49156657|49156658|49156659|49156660|49156661|49156662|49156663|49156664|49156665|49156666|49156667|49156668|49156669|49156670|49156671|49156672|49156673|49156674|49156675|49156676|49156677|49156678|49156679|49156680|49156681|49156682|49156683|49156684|49156685|49156686|49156687|49156688|49156689|49156690|49156691|49156692|49156693|49156694|49156695|49156696|49156697|49156698|49156699|481550)\",\n                    \"installments_pattern\": \"\",\n                    \"exclusion_pattern\": \"^(41160801)\"\n                },\n                \"security_code\": {\n                    \"length\": 3,\n                    \"card_location\": \"back\",\n                    \"mode\": \"mandatory\"\n                }\n            }\n        ],\n        \"additional_info_needed\": [\n            \"cardholder_name\"\n        ],\n        \"min_allowed_amount\": 5,\n        \"max_allowed_amount\": 300000,\n        \"accreditation_time\": 2880,\n        \"financial_institutions\": [],\n        \"processing_modes\": [\n            \"aggregator\"\n        ]\n    },\n    {\n        \"id\": \"paycash\",\n        \"name\": \"PayCash\",\n        \"payment_type_id\": \"ticket\",\n        \"status\": \"active\",\n        \"secure_thumbnail\": \"https://www.mercadopago.com/org-img/MP3/API/logos/paycash.gif\",\n        \"thumbnail\": \"https://www.mercadopago.com/org-img/MP3/API/logos/paycash.gif\",\n        \"deferred_capture\": \"unsupported\",\n        \"settings\": [],\n        \"additional_info_needed\": [\n            \"entity_type\",\n            \"identification_number\",\n            \"identification_type\"\n        ],\n        \"min_allowed_amount\": 20,\n        \"max_allowed_amount\": 10000,\n        \"accreditation_time\": 0,\n        \"financial_institutions\": [],\n        \"processing_modes\": [\n            \"aggregator\"\n        ]\n    },\n    {\n        \"id\": \"edenred\",\n        \"name\": \"Edenred\",\n        \"payment_type_id\": \"debit_card\",\n        \"status\": \"testing\",\n        \"secure_thumbnail\": \"https://http2.mlstatic.com/ui/ui-logos/2.0.2/png/l/mastercard.png\",\n        \"thumbnail\": \"https://http2.mlstatic.com/ui/ui-logos/2.0.2/png/l/mastercard.png\",\n        \"deferred_capture\": \"unsupported\",\n        \"settings\": [\n            {\n                \"card_number\": {\n                    \"validation\": \"standard\",\n                    \"length\": 16\n                },\n                \"bin\": {\n                    \"pattern\": \"^(636318)\",\n                    \"installments_pattern\": null,\n                    \"exclusion_pattern\": null\n                },\n                \"security_code\": {\n                    \"length\": 3,\n                    \"card_location\": \"back\",\n                    \"mode\": \"mandatory\"\n                }\n            }\n        ],\n        \"additional_info_needed\": [\n            \"cardholder_name\"\n        ],\n        \"min_allowed_amount\": 5,\n        \"max_allowed_amount\": 200000,\n        \"accreditation_time\": 0,\n        \"financial_institutions\": [],\n        \"processing_modes\": [\n            \"aggregator\"\n        ]\n    },\n    {\n        \"id\": \"sodexo\",\n        \"name\": \"Sodexo\",\n        \"payment_type_id\": \"debit_card\",\n        \"status\": \"testing\",\n        \"secure_thumbnail\": \"https://www.mercadopago.com/org-img/MP3/API/logos/debvisa.gif\",\n        \"thumbnail\": \"http://img.mlstatic.com/org-img/MP3/API/logos/debvisa.gif\",\n        \"deferred_capture\": \"unsupported\",\n        \"settings\": [\n            {\n                \"card_number\": {\n                    \"validation\": \"standard\",\n                    \"length\": 16\n                },\n                \"bin\": {\n                    \"pattern\": \"^(506444|506445|506365|230984|627535|506273|506336)\",\n                    \"installments_pattern\": null,\n                    \"exclusion_pattern\": null\n                },\n                \"security_code\": {\n                    \"length\": 3,\n                    \"card_location\": \"back\",\n                    \"mode\": \"mandatory\"\n                }\n            }\n        ],\n        \"additional_info_needed\": [\n            \"cardholder_name\"\n        ],\n        \"min_allowed_amount\": 5,\n        \"max_allowed_amount\": 200000,\n        \"accreditation_time\": 2880,\n        \"financial_institutions\": [],\n        \"processing_modes\": [\n            \"aggregator\"\n        ]\n    },\n    {\n        \"id\": \"carnet\",\n        \"name\": \"Carnet\",\n        \"payment_type_id\": \"credit_card\",\n        \"status\": \"testing\",\n        \"secure_thumbnail\": \"https://http2.mlstatic.com/storage/logos-api-admin/14b2cb40-e3bc-11ea-a26c-a3e05eb53570-m@2x.png\",\n        \"thumbnail\": \"https://http2.mlstatic.com/storage/logos-api-admin/14b2cb40-e3bc-11ea-a26c-a3e05eb53570-m@2x.png\",\n        \"deferred_capture\": \"unsupported\",\n        \"settings\": [],\n        \"additional_info_needed\": [\n            \"cardholder_name\"\n        ],\n        \"min_allowed_amount\": 5,\n        \"max_allowed_amount\": 200000,\n        \"accreditation_time\": 2880,\n        \"financial_institutions\": [],\n        \"processing_modes\": [\n            \"aggregator\"\n        ]\n    },\n    {\n        \"id\": \"amex\",\n        \"name\": \"American Express\",\n        \"payment_type_id\": \"credit_card\",\n        \"status\": \"active\",\n        \"secure_thumbnail\": \"https://www.mercadopago.com/org-img/MP3/API/logos/amex.gif\",\n        \"thumbnail\": \"http://img.mlstatic.com/org-img/MP3/API/logos/amex.gif\",\n        \"deferred_capture\": \"supported\",\n        \"settings\": [\n            {\n                \"card_number\": {\n                    \"validation\": \"standard\",\n                    \"length\": 15\n                },\n                \"bin\": {\n                    \"pattern\": \"^((34)|(37))\",\n                    \"installments_pattern\": \"^(?!341595|376743|3603(2|4)|360732|36075(5|6)|360935|37159(3|5)|3747((5(8|9))|(62))|3751(3([0-9])|7(7|8))|3764((0([0-9]))|(1([0-8]))|(2(2|8|9))|(3(6|7))|(4[0-9]|5[0-8])|(6([1-7])|7[0-8]|8[0-9]|9(1|3)))|37652(0|9)|37660((1|2)|[5-9])|376((6(2[0-9]|3[5-9]|8[5-8]))|71[0-4])|3771(69|74)|37779[0-8]|3778(0[2-6]|1[3-6]|20)|37782(5|6)|3799(6[6-8]|7(5|7)))\",\n                    \"exclusion_pattern\": null\n                },\n                \"security_code\": {\n                    \"length\": 4,\n                    \"card_location\": \"front\",\n                    \"mode\": \"mandatory\"\n                }\n            }\n        ],\n        \"additional_info_needed\": [\n            \"cardholder_name\"\n        ],\n        \"min_allowed_amount\": 1,\n        \"max_allowed_amount\": 300000,\n        \"accreditation_time\": 2880,\n        \"financial_institutions\": [],\n        \"processing_modes\": [\n            \"aggregator\"\n        ]\n    },\n    {\n        \"id\": \"bancomer\",\n        \"name\": \"BBVA Bancomer\",\n        \"payment_type_id\": \"atm\",\n        \"status\": \"active\",\n        \"secure_thumbnail\": \"https://http2.mlstatic.com/storage/logos-api-admin/65467f50-5cf3-11ec-813c-8542a9aff8ea-xl@2x.png\",\n        \"thumbnail\": \"https://http2.mlstatic.com/storage/logos-api-admin/65467f50-5cf3-11ec-813c-8542a9aff8ea-xl@2x.png\",\n        \"deferred_capture\": \"does_not_apply\",\n        \"settings\": [],\n        \"additional_info_needed\": [],\n        \"min_allowed_amount\": 10,\n        \"max_allowed_amount\": 40000,\n        \"accreditation_time\": 1440,\n        \"financial_institutions\": [],\n        \"processing_modes\": [\n            \"aggregator\"\n        ]\n    },\n    {\n        \"id\": \"pespay\",\n        \"name\": \"PESpay\",\n        \"payment_type_id\": \"ticket\",\n        \"status\": \"testing\",\n        \"secure_thumbnail\": \"https://http2.mlstatic.com/frontend-assets/pmethods-admin-fe/default-image.jpg\",\n        \"thumbnail\": \"https://http2.mlstatic.com/frontend-assets/pmethods-admin-fe/default-image.jpg\",\n        \"deferred_capture\": \"unsupported\",\n        \"settings\": [],\n        \"additional_info_needed\": [\n            \"entity_type\",\n            \"identification_number\",\n            \"identification_type\"\n        ],\n        \"min_allowed_amount\": 10,\n        \"max_allowed_amount\": 10000,\n        \"accreditation_time\": 0,\n        \"financial_institutions\": [],\n        \"processing_modes\": [\n            \"aggregator\"\n        ]\n    },\n    {\n        \"id\": \"mercadopagocard\",\n        \"name\": \"Tarjeta MercadoPago\",\n        \"payment_type_id\": \"prepaid_card\",\n        \"status\": \"testing\",\n        \"secure_thumbnail\": \"https://www.mercadopago.com/org-img/MP3/API/logos/mercadopagocard.gif\",\n        \"thumbnail\": \"http://img.mlstatic.com/org-img/MP3/API/logos/mercadopagocard.gif\",\n        \"deferred_capture\": \"supported\",\n        \"settings\": [\n            {\n                \"card_number\": {\n                    \"validation\": \"standard\",\n                    \"length\": 16\n                },\n                \"bin\": {\n                    \"pattern\": \"^()\",\n                    \"installments_pattern\": \"\",\n                    \"exclusion_pattern\": null\n                },\n                \"security_code\": {\n                    \"length\": 3,\n                    \"card_location\": \"back\",\n                    \"mode\": \"mandatory\"\n                }\n            }\n        ],\n        \"additional_info_needed\": [\n            \"cardholder_name\"\n        ],\n        \"min_allowed_amount\": 5,\n        \"max_allowed_amount\": 300000,\n        \"accreditation_time\": 0,\n        \"financial_institutions\": [],\n        \"processing_modes\": [\n            \"aggregator\"\n        ]\n    },\n    {\n        \"id\": \"banamex\",\n        \"name\": \"Citibanamex\",\n        \"payment_type_id\": \"atm\",\n        \"status\": \"active\",\n        \"secure_thumbnail\": \"https://http2.mlstatic.com/storage/logos-api-admin/2fc79310-9a37-11ec-aad4-c3381f368aaf-m@2x.png\",\n        \"thumbnail\": \"https://http2.mlstatic.com/storage/logos-api-admin/2fc79310-9a37-11ec-aad4-c3381f368aaf-m@2x.png\",\n        \"deferred_capture\": \"does_not_apply\",\n        \"settings\": [],\n        \"additional_info_needed\": [],\n        \"min_allowed_amount\": 5,\n        \"max_allowed_amount\": 40000,\n        \"accreditation_time\": 60,\n        \"financial_institutions\": [],\n        \"processing_modes\": [\n            \"aggregator\"\n        ]\n    },\n    {\n        \"id\": \"oxxo\",\n        \"name\": \"OXXO\",\n        \"payment_type_id\": \"ticket\",\n        \"status\": \"active\",\n        \"secure_thumbnail\": \"https://http2.mlstatic.com/storage/logos-api-admin/87075440-571e-11e8-823a-758d95db88db-xl@2x.png\",\n        \"thumbnail\": \"https://http2.mlstatic.com/storage/logos-api-admin/87075440-571e-11e8-823a-758d95db88db-xl@2x.png\",\n        \"deferred_capture\": \"does_not_apply\",\n        \"settings\": [],\n        \"additional_info_needed\": [],\n        \"min_allowed_amount\": 5,\n        \"max_allowed_amount\": 10000,\n        \"accreditation_time\": 2880,\n        \"financial_institutions\": [],\n        \"processing_modes\": [\n            \"aggregator\"\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "/payments (Get All)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/payments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"payments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/payments/checkout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"items\": [\n        {\n            \"id\": \"item-ID-1234\",\n            \"title\": \"Gorra\",\n            \"currency_id\": \"MXN\",\n            \"picture_url\": \"https: //www.mercadopago.com/org-img/MP3/home/logomp3.gif\",\n            \"description\": \"Gorra roja\",\n            \"category_id\": \"DP-034\",\n            \"quantity\": 1,\n            \"unit_price\": 6000.00\n        }\n    ],\n    \"payer\": {\n        \"name\": \"Franko\",\n        \"surname\": \"Campos\",\n        \"email\": \"campos@gmail.com\",\n        \"phone\": {\n            \"area_code\": \"52\",\n            \"number\": \"9993221100\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/payments/checkout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"payments",
+								"checkout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/payments/checkout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"items\": [\n        {\n            \"id\": \"item-ID-1234\",\n            \"title\": \"Gorra\",\n            \"currency_id\": \"MXN\",\n            \"picture_url\": \"https: //www.mercadopago.com/org-img/MP3/home/logomp3.gif\",\n            \"description\": \"Gorra roja\",\n            \"category_id\": \"DP-034\",\n            \"quantity\": 1,\n            \"unit_price\": 6000.00\n        }\n    ],\n    \"payer\": {\n        \"name\": \"Franko\",\n        \"surname\": \"Campos\",\n        \"email\": \"campos@gmail.com\",\n        \"phone\": {\n            \"area_code\": \"52\",\n            \"number\": \"9993221100\"\n        }\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/payments/checkout",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"payments",
+										"checkout"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2061"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"80d-BvYRi9rS1r17J7yt2AI2xddNDRA\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 25 Sep 2024 19:07:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"additional_info\": \"\",\n    \"auto_return\": \"approved\",\n    \"back_urls\": {\n        \"failure\": \"https://www.failure.com\",\n        \"pending\": \"https://www.pending.com\",\n        \"success\": \"https://www.success.com\"\n    },\n    \"binary_mode\": false,\n    \"client_id\": \"922446416551403\",\n    \"collector_id\": 276796233,\n    \"coupon_code\": null,\n    \"coupon_labels\": null,\n    \"date_created\": \"2024-09-25T15:07:13.517-04:00\",\n    \"date_of_expiration\": null,\n    \"expiration_date_from\": null,\n    \"expiration_date_to\": null,\n    \"expires\": true,\n    \"external_reference\": \"Reference_1234\",\n    \"id\": \"276796233-a9d84422-64a9-465b-acac-05663d2ca62a\",\n    \"init_point\": \"https://www.mercadopago.com.mx/checkout/v1/redirect?pref_id=276796233-a9d84422-64a9-465b-acac-05663d2ca62a\",\n    \"internal_metadata\": null,\n    \"items\": [\n        {\n            \"id\": \"item-ID-1234\",\n            \"category_id\": \"DP-034\",\n            \"currency_id\": \"MXN\",\n            \"description\": \"Gorra roja\",\n            \"picture_url\": \"https://http2.mlstatic.com/D_NQ_NP_861316-MLA41115505148_032020-F.jpg\",\n            \"title\": \"Gorra\",\n            \"quantity\": 1,\n            \"unit_price\": 6000\n        }\n    ],\n    \"marketplace\": \"NONE\",\n    \"marketplace_fee\": 0,\n    \"metadata\": {},\n    \"notification_url\": \"https://www.asdeporte.com/ipn\",\n    \"operation_type\": \"regular_payment\",\n    \"payer\": {\n        \"phone\": {\n            \"area_code\": \"52\",\n            \"number\": \"9993221100\"\n        },\n        \"address\": {\n            \"zip_code\": \"\",\n            \"street_name\": \"\",\n            \"street_number\": null\n        },\n        \"email\": \"campos@gmail.com\",\n        \"identification\": {\n            \"number\": \"\",\n            \"type\": \"\"\n        },\n        \"name\": \"Franko\",\n        \"surname\": \"Campos\",\n        \"date_created\": null,\n        \"last_purchase\": null\n    },\n    \"payment_methods\": {\n        \"default_card_id\": null,\n        \"default_payment_method_id\": null,\n        \"excluded_payment_methods\": [\n            {\n                \"id\": \"master\"\n            }\n        ],\n        \"excluded_payment_types\": [\n            {\n                \"id\": \"ticket\"\n            }\n        ],\n        \"installments\": 1,\n        \"default_installments\": null\n    },\n    \"processing_modes\": null,\n    \"product_id\": null,\n    \"redirect_urls\": {\n        \"failure\": \"\",\n        \"pending\": \"\",\n        \"success\": \"\"\n    },\n    \"sandbox_init_point\": \"https://sandbox.mercadopago.com.mx/checkout/v1/redirect?pref_id=276796233-a9d84422-64a9-465b-acac-05663d2ca62a\",\n    \"site_id\": \"MLM\",\n    \"shipments\": {\n        \"default_shipping_method\": null,\n        \"receiver_address\": {\n            \"zip_code\": \"\",\n            \"street_name\": \"\",\n            \"street_number\": null,\n            \"floor\": \"\",\n            \"apartment\": \"\",\n            \"city_name\": null,\n            \"state_name\": null,\n            \"country_name\": null\n        }\n    },\n    \"statement_descriptor\": \"AsDeporte\",\n    \"total_amount\": null,\n    \"last_updated\": null,\n    \"financing_group\": \"\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

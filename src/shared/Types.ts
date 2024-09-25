@@ -18,16 +18,25 @@ export interface UpdateCustomer extends BaseCustomer {
   email?: string;
 }
 
-export interface Payer {
-  type: string;
-  id: string;
+export interface PayerCheckout {
+  email: string;
+  name?: string;
+  surname?: string;
+  phone?: CustomerPhone;
 }
 
-export interface CreatePayment {
-  transaction_amount: number;
+export interface ItemProduct {
+  id: string;
+  title: string;
+  currency_id: string;
+  picture_url?: string;
   description: string;
-  payment_method_id: string;
-  token: string;
-  installments: number;
-  payer: Payer;
+  category_id?: string;
+  quantity: number;
+  unit_price: number;
+}
+
+export interface CreateCheckoutPreference {
+  items: ItemProduct[];
+  payer: PayerCheckout;
 }

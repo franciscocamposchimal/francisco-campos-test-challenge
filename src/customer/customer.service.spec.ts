@@ -3,11 +3,10 @@ import { getRepositoryToken } from '@nestjs/typeorm';
 import { MercadopagoModule } from '../mercadopago/mercadopago.module';
 import { CustomerRepository } from '../shared/repositories/Customer.repository';
 import { Customer } from '../shared/entities/Customer.entity';
-import { CustomerController } from './customer.controller';
 import { CustomerService } from './customer.service';
 
-describe('CustomerController', () => {
-  let controller: CustomerController;
+describe('CustomerService', () => {
+  let service: CustomerService;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
@@ -23,13 +22,12 @@ describe('CustomerController', () => {
         },
       ],
       imports: [MercadopagoModule],
-      controllers: [CustomerController],
     }).compile();
 
-    controller = module.get<CustomerController>(CustomerController);
+    service = module.get<CustomerService>(CustomerService);
   });
 
   it('should be defined', () => {
-    expect(controller).toBeDefined();
+    expect(service).toBeDefined();
   });
 });

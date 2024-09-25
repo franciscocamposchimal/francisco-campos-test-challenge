@@ -1,11 +1,11 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { CustomersService } from './customersService.service';
-import { PaymentService } from './paymentsService.service';
+import { MPCustomersService } from './MPCustomers.service';
+import { MPPaymentService } from './MPPayments.service';
 
 @Module({
   imports: [ConfigModule],
-  providers: [CustomersService, PaymentService],
-  exports: [CustomersService, PaymentService],
+  providers: [MPCustomersService, MPPaymentService],
+  exports: [MPCustomersService, MPPaymentService],
 })
 export class MercadopagoModule {}

@@ -1,4 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
+import { MercadopagoModule } from '../mercadopago/mercadopago.module';
 import { PaymentsController } from './payments.controller';
 
 describe('PaymentsController', () => {
@@ -6,6 +7,7 @@ describe('PaymentsController', () => {
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
+      imports: [MercadopagoModule],
       controllers: [PaymentsController],
     }).compile();
 
