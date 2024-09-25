@@ -5,6 +5,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { MercadopagoModule } from './mercadopago/mercadopago.module';
 import { CustomerModule } from './customer/customer.module';
+import { PaymentsModule } from './payments/payments.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { CustomerModule } from './customer/customer.module';
     }),
     MercadopagoModule,
     CustomerModule,
+    PaymentsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
